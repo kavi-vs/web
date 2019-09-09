@@ -1,3 +1,5 @@
+package test;
+
 import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonObject;
 import org.springframework.context.annotation.Bean;
