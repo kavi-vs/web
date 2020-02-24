@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'com.novoda.bintray-release'
 
 ext {
-    VS_CORE_VERSION = '3.0.0'
+    VS_CORE_VERSION = '3.0.1'
     VERTX_VERSION = '3.8.1'
 }
 repositories {
@@ -28,11 +28,6 @@ mainClassName = ''
 dependencies {
     compile "tech.kavi:vs-core:$VS_CORE_VERSION"
     compile "io.vertx:vertx-web:$VERTX_VERSION"
-}
-
-compileJava {
-    targetCompatibility = JavaVersion.VERSION_1_8
-    sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
 compileKotlin {
@@ -53,7 +48,7 @@ publish {
     userOrg = 'kavi'
     groupId = 'tech.kavi'
     artifactId = 'vs-web'
-    publishVersion = '3.0.0'
+    publishVersion = '3.0.1'
     desc = 'Vertx with Spring Integration by kotlin'
     website = 'https://vs.kavi.tech'
 }

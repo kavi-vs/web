@@ -3,7 +3,7 @@
     "corePoolSize": 100
   },
   "vertxOptions": {
-    "clustered": true
+    "clustered": false
   },
   "dataSource":{
     "username": "root",
