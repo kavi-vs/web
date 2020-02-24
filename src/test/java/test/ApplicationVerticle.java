@@ -2,8 +2,8 @@ package test;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import tech.kavi.vs.core.LauncherVerticle;
 import tech.kavi.vs.web.HandlerRequestAnnotationBeanName;
-import tech.kavi.vs.web.LauncherVerticle;
 
 @Import(BeanConfiguration.class)
 @ComponentScan(nameGenerator= HandlerRequestAnnotationBeanName.class)
