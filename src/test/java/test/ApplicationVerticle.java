@@ -14,8 +14,7 @@ public class ApplicationVerticle extends LauncherVerticle {
         super.start();
         System.out.println("Deploy ApplicationVerticle");
     }
-
-    public static void main(String[] args ) {
+    public static void main(String[] args) {
         launcher(ApplicationVerticle.class);
     }
 }
