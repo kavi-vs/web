@@ -2,10 +2,11 @@ package test;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
+import tech.kavi.vs.web.HandlerRequestAnnotationBeanName;
 import tech.kavi.vs.web.LauncherVerticle;
 
 @Import(BeanConfiguration.class)
-@ComponentScan
+@ComponentScan(nameGenerator= HandlerRequestAnnotationBeanName.class)
 public class ApplicationVerticle extends LauncherVerticle {
 
     @Override

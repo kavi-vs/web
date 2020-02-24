@@ -9,7 +9,7 @@ import org.springframework.util.StringUtils
 /**
  * 重构beanName注入方式
  * */
-class AnnotationBeanNameGenerator : AnnotationBeanNameGenerator() {
+class HandlerRequestAnnotationBeanName : AnnotationBeanNameGenerator() {
 
     override fun generateBeanName(definition: BeanDefinition, registry: BeanDefinitionRegistry): String? {
         if (definition is AnnotatedBeanDefinition) {

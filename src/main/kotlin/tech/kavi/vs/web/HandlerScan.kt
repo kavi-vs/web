@@ -11,5 +11,5 @@ import org.springframework.stereotype.Controller
 @Retention(AnnotationRetention.RUNTIME)
 @MustBeDocumented
 @Controller
-@ComponentScan(nameGenerator = AnnotationBeanNameGenerator::class)
-annotation class HandlerScan(vararg val value: String, val isPrefixPath: Boolean = true, val uris:Array<Uri> = [])
+@ComponentScan(nameGenerator = HandlerRequestAnnotationBeanName::class)
+annotation class HandlerScan(vararg val value: String, val isPrefixPath: Boolean = false, val uris:Array<Uri> = [])
